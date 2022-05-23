@@ -17,5 +17,8 @@ namespace EntityLayer.Concrete
         public string WriterMail { get; set; }
         public string WriterPassword { get; set; }
         public bool WriterStatus { get; set; }
+        public List<Blog> Blogs { get; set; }
+        public virtual ICollection<Message3> WriterSender { get; set; }
+        public virtual ICollection<Message3> WriterReceiver { get; set; }
     }
 }
